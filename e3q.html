@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--Define the background colour and text font-->
+    <style>
+        body {
+            background-color: beige;
+        }
+
+        h1 {
+            color: black;
+            text-align: center;
+        }
+
+        p {
+            font-family: Arial;
+            font-size: 20px;
+        }
+        .button {
+          background-color: gold; 
+          border: double;
+          color: white;
+          padding: 7px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 8px;
+          cursor: pointer;
+          border-radius: 5px;
+          text-align: center;
+
+        }
+        .button:hover {
+          background-color: orange;
+          color: black;
+        }
+        .first-image {
+          background-image: url("pogled.jpg");
+          background-color: #cccccc;
+          height:300px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+          opacity: 0.7;
+        }
+
+        .first-text {
+          text-align: center;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: white;
+        }
+        .izbor {
+          background-color: bisque;
+          color: black;
+          padding: 10px;
+          font-style: italic;
+        } 
+
+     * {box-sizing: border-box}
+
+    /* Full-width input fields */
+      input[type=text], input[type=password] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+
+    input[type=text]:focus, input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+      padding: 14px 20px;
+      background-color: indianred;
+    }
+
+    /* Float cancel and signup buttons and add an equal width */
+    .cancelbtn, .signupbtn {
+      float: left;
+      width: 50%;
+    }
+
+    /* Add padding to container elements */
+    .container {
+      padding: 16px;
+    }
+
+    /* Clear floats */
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    /* Change styles for cancel button and signup button on extra small screens */
+    @media screen and (max-width: 300px) {
+      .cancelbtn, .signupbtn {
+        width: 100%;
+      }
+    }
+
+    /* Button used to open the contact form - fixed at the bottom of the page */
+    .open-button {
+      background-color: gold;
+      color: black;
+      padding: 16px 20px;
+      border: double;
+      cursor: pointer;
+      opacity: 0.8;
+      position: fixed;
+      bottom: 23px;
+      right: 28px;
+      width: 280px;
+      border-radius: 5px;
+      text-align: center;
+    }
+    .open-button:hover {
+      background-color: orange;
+      color: black;
+    }
+
+    /* The popup form - hidden by default */
+    .form-popup {
+      background-color: beige;
+      display: none;
+      position: fixed;
+      bottom: 0;
+      right: 20px;
+      border: 3px solid #f1f1f1;
+      z-index: 9;
+    }
+
+    /* Add styles to the form container */
+    .form-container {
+      max-width: 400px;
+      padding: 10px;
+      background-color: peachpuff;
+    }
+
+    /* Full-width input fields */
+    .form-container input[type=text], .form-container input[type=password], .form-container input[type=date] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: none;
+      background: #f1f1f1;
+      
+    }
+
+    /* When the inputs get focus, do something */
+    .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+
+    /* Set a style for the submit/login button */
+    .form-container .btn {
+      background-color: lightgreen;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom:10px;
+      opacity: 0.8;
+    }
+
+    /* Add a red background color to the cancel button */
+    .form-container .cancel {
+      background-color: lightcoral;
+    }
+
+    /* Add some hover effects to buttons */
+    .form-container .btn:hover, .open-button:hover {
+      opacity: 1.0;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="first-image">
+        <div class="first-text">
+            <h1 style="font-size:50px">Eco and Energy Efficient Queen</h1>
+        </div>
+    </div>
+    <h2 class="izbor">Restoran</h2>
+    <p>Restorani su prostrani i imaju veliku ponudu hrane i pića.</p>
+
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+    <a href="https://www.w3schools.com">This is a link</a>
+    <img src="restoran.jpg" alt="restoran.com" width="1000" height="600">
+    <input type="date" id="myDate" value="2014-02-09">
+    
+        <form action="action_page.php" style="border:1px solid #ccc">
+            <div class="form-container">
+                <label for="imeprezime"><b>Ime i prezime</b></label>
+                <input type="text" placeholder="Unesite ime i prezime" name="imeprezime" required>
+                
+                <label for="email"><b>E-mail</b></label>
+                <input type="text" placeholder="Unesite e-mail" name="email" required>
+                
+                <label for="lozinka"><b>Lozinka</b></label>
+                <input type="password" placeholder="Unesite lozinku" name="lozinka" required>
+
+                <label for="lozinka-ponovi"><b>Ponovi lozinku</b></label>
+                <input type="password" placeholder="Ponovite lozinku" name="lozinka-ponovi" required>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Zapamti me
+                </label>
+
+                <div class="clearfix">
+                    <button type="button" class="cancelbtn">Odustani</button>
+                    <button type="submit" class="signupbtn">Rezerviraj</button>
+                </div>
+            </div>
+        </form>
+
+        
+        <button class="open-button" onclick="openForm()">Rezerviraj smještaj</button>
+
+        <div class="form-popup" id="myForm">
+            <form action="rezervirano.php" class="form-container" method="post">
+                <h1>E3Q Hotel</h1>
+                <div class="container">
+                    <label for="imeprezime"><b>Ime i prezime</b></label>
+                    <input input type="text" placeholder="Unesite ime i prezime" name="imeprezime" required>
+
+                    <label for="email"><b>E-mail</b></label>
+                    <input input type="text" placeholder="Unesite e-mail" name="email" required>
+
+                    <label for="dolazak"><b>Datum dolaska</b></label>
+                    <input input type="date" placeholder="Datum dolaska" name="dolazak" value="2019-01-07" required>
+
+                    <label for="odlazak"><b>Datum odlaska</b></label>
+                    <input input type="date" placeholder="Datum odlaska" name="odlazak" value="2019-01-07" required>
+
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Zapamti me
+                    </label>
+
+                    <button type="submit" class="btn">Rezerviraj</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Odustani</button>
+                   
+                </div>
+            </form>
+        </div>
+
+        <script>
+            function openForm() {
+                document.getElementById("myForm").style.display = "block";
+            }
+
+            function closeForm() {
+                document.getElementById("myForm").style.display = "none";
+            }
+        </script>
+
+
+</body>
+</html>
