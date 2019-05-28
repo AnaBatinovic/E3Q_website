@@ -1,0 +1,79 @@
+navbar {
+	background: grey;
+	margin: 10px; 
+}
+
+.navbar{
+	width: 100%;
+	background:beige;
+	margin-top: 150px; 
+	height: 100px;
+}
+ 
+.navbar ul {
+	text-align: left;
+	display: inline;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.navbar ul li {
+	font: bold 30px/40px 'Economica', sans-sefir;
+	display: inline-block;
+	position: relative; 
+	padding: 25px 40px;
+	background: #34393d;
+}
+
+.navbar ul li a {
+	text-decoration: none;
+	padding: 25px 20 px;
+	color: white;
+	font-size: 25px;
+	border-radius: 3px; 
+	transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.navbar ul li:hover {
+	background: red;
+	color: white
+}
+
+ul li ul {
+	padding: 2px;
+	position: absolute;
+	top: 90px;
+	left: -5px;
+	width: fit-content;
+	display: block;
+	visibility: hidden;
+}
+
+ul li ul li {
+	background:gray;
+	display: block;
+}
+
+ul li ul li:hover {
+	background: red;
+}
+
+ul li:hover ul {
+	display: block;
+	opacity: 1;
+	visibility: visible;
+}
+
+ul ul ul li {
+	display: none;
+}
+
+ul ul li:hover li {
+	display: block;
+}
+
+ul ul ul {
+	left: 100%;
+	top: 0;
+}
