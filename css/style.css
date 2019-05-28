@@ -100,7 +100,7 @@ cursor: pointer;
 opacity: 0.8;
 position: fixed;
 bottom: 23px;
-right: 28px;
+right: 758px;
 width: 380px;
 border-radius: 5px;
 text-align: center;
@@ -117,7 +117,7 @@ background-color: beige;
 display: none;
 position: fixed;
 bottom: 0;
-right: 20px;
+right: 758px;
 border: 3px solid #f1f1f1;
 z-index: 9;
 }
@@ -234,7 +234,6 @@ header .socials {
     background-color: #d9593f;
 }
 
-
 #footer {
     display: block;
     color: #908b8b;
@@ -243,41 +242,69 @@ header .socials {
     padding: 77px 0 40px;
 }
 
-#footer .color2 {
-    margin-bottom: 5px;
-}
-
 #footer strong {
-    font-weight: 300;
+    font-weight:bold;
     font-size: 18px;
     position: relative;
     top: -2px;
 }
 
-.copyright {
+#main {
+    display: block;
+    padding: 15px 0;
+}
+#main .wrap {
+    padding: 30px;
+    background-color: #fff;
+}
+#main .wrap .image-with-border {
+    display: block;
+    max-width: 400px;
+    border: 4px solid #b08a28;
+    border-radius: 6px;
+    box-shadow: inset 10px 10px 10px #fff, inset -10px -10px 10px #fff;
+}
+#main .wrap h1 {
+    padding-top: 0;
+    margin-top: 0;
+}
+#main .wrap .image-with-border.pull-right {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+#main .wrap .image-with-border.pull-left {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+#main .wrap .image-with-border.full {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+#main .wrap table {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+#main .wrap table tr th {
+    padding: 15px;
+    color: #fff;
+    text-align: left;
+    background-color: #b08a28;
+}
+#main .wrap table tr td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #b08a28;
+}
+#main .wrap table tr td p {
     float: left;
-    padding-top: 7px;
-}
+    padding: 20px;
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #b08a28;
+    border-radius: 6px;
 
-#toTop {
-    display: none;
-    text-decoration: none;
-    position: fixed;
-    bottom: 40px;
-    left: 51%;
-    margin-left: 640px;
-    overflow: hidden;
-    width: 69px;
-    height: 79px;
-    border: none;
-    text-indent: -999px;
-    z-index: 20;
-    background: url(../images/totop.png) no-repeat left 0; 
-    transition: 0s ease;
-    -o-transition: 0s ease;
-    -webkit-transition: 0s ease;
-}
-#toTop:hover {
-    outline: none;
-    background-position: right 0;
-}
