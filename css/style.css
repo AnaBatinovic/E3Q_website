@@ -10,6 +10,10 @@ body {
 p {
     font-family: Arial;
     font-size: 20px;
+    text-align: justify;
+    padding: 10px;
+    line-height: normal;
+    
 }
 .button {
   background-color: gold; 
@@ -167,7 +171,7 @@ background-color: lightcoral;
 opacity: 1.0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3{
     color: #343434;
     font-weight: normal;
     font-family: 'Economica', sans-serif;
@@ -183,13 +187,6 @@ h3 {
     text-align: center;
 }
 
-h2 {
-    font-size: 48px;
-    line-height: 64px;
-    color: #000;
-    padding-top: 15px;
-    margin-bottom: 11px;
-}
 
 header {
     display: block;
@@ -255,56 +252,58 @@ header .socials {
 }
 #main .wrap {
     padding: 30px;
-    background-color: #fff;
+    background-color: gainsboro;
 }
-#main .wrap .image-with-border {
+#main .wrap .image {
     display: block;
     max-width: 400px;
-    border: 4px solid #b08a28;
-    border-radius: 6px;
-    box-shadow: inset 10px 10px 10px #fff, inset -10px -10px 10px #fff;
 }
-#main .wrap h1 {
-    padding-top: 0;
-    margin-top: 0;
+#main .wrap h2 {
+        font-size: 30px;
+        line-height: 64px;
+        color: #000;
+        padding-top: 15px;
+        margin-bottom: 11px;
+        font-style: inherit;
+        font-weight: bold;
 }
-#main .wrap .image-with-border.pull-right {
+#main .wrap p {
+    font-family: Arial;
+    font-size: 20px;
+    text-align: justify;
+    padding: 10px;
+    line-height: normal;
+    
+}
+#main .wrap .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+    
+/* Clearfix (clear floats) */
+#main .wrap .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#main .wrap ul li {
+    font-family: Arial;
+    font-size: 20px;
+    line-height: normal;
+
+}
+#main .wrap .image.right {
     margin-bottom: 20px;
     margin-left: 20px;
 }
-#main .wrap .image-with-border.pull-left {
+#main .wrap .image.left {
     margin-bottom: 20px;
     margin-right: 20px;
 }
-#main .wrap .image-with-border.full {
+#main .wrap .image.full {
     max-width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
-#main .wrap table {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    border: 0;
-    border-spacing: 0;
-    border-collapse: collapse;
-}
-#main .wrap table tr th {
-    padding: 15px;
-    color: #fff;
-    text-align: left;
-    background-color: #b08a28;
-}
-#main .wrap table tr td {
-    padding: 10px 15px;
-    border-bottom: 1px solid #b08a28;
-}
-#main .wrap table tr td p {
-    float: left;
-    padding: 20px;
-    margin: 0;
-    font-size: 24px;
-    font-weight: bold;
-    color: #fff;
-    background-color: #b08a28;
-    border-radius: 6px;
 
