@@ -3,43 +3,26 @@
 
 html,
 body {
-    background-color: beige;
+    padding: 0;
+    margin: 0;
+    background-color:lightblue;
     font: 14px/20px  'Open Sans', sans-serif;
-}
+    background-image: url(../images/image_14.jpg);
+    background-size: 100% 100%;
+    margin-top: 0px;
+    bottom:0;
+    right:0;
+    opacity: 0.95;
 
+}
 p {
     font-family: Arial;
     font-size: 20px;
     text-align: justify;
     padding: 10px;
     line-height: normal;
-    
-}
-.button {
-  background-color: gold; 
-  border: double;
-  color: white;
-  padding: 7px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 8px;
-  cursor: pointer;
-  border-radius: 5px;
-  text-align: center;
-
-}
-.button:hover {
-  background-color: orange;
-  color: black;
 }
 
-.izbor {
-  background-color: bisque;
-  color: black;
-  padding: 10px;
-  font-style: italic;
-} 
 
 * {box-sizing: border-box}
 
@@ -58,41 +41,11 @@ background-color: #ddd;
 outline: none;
 }
 
-hr {
-border: 1px solid #f1f1f1;
-margin-bottom: 25px;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-padding: 14px 20px;
-background-color: indianred;
-}
-
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
-float: left;
-width: 50%;
-}
-
-/* Add padding to container elements */
 .container {
 padding: 16px;
-}
-
-/* Clear floats */
-.clearfix::after {
-content: "";
-clear: both;
-display: table;
-}
-
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-.cancelbtn, .signupbtn {
 width: 100%;
 }
-}
+
 
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
@@ -171,6 +124,67 @@ background-color: lightcoral;
 opacity: 1.0;
 }
 
+#slider {
+    width: 1200px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    overflow: hidden;
+}
+#sliderbox {
+    position: relative;
+    width: 4800px;
+    animation-name: slideranimation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    
+}
+#sliderbox img {
+    float: left;
+    width: 1200px;
+    height: 800px;
+}
+
+@keyframes slideranimation {
+
+    0%
+    {
+        left: 0px;
+    }
+
+    20% /*4 second */
+    {
+        left: 0px;
+    }
+    25% /*5 second */
+    {
+        left: -1200px;
+    }
+    45% /*9 second */
+    {
+        left: -1200px;
+    }
+    50% /*10 second */
+    {
+        left: -2400px;
+    }
+    70% /*14 second */
+    {
+        left: -2400px;
+    }
+    75% /*15 second */
+    {
+        left: -3600px;
+    }
+    95%
+    {
+        left: -3600px;
+    }
+
+
+
+}
 h1, h2, h3{
     color: #343434;
     font-weight: normal;
@@ -193,12 +207,13 @@ header {
     padding: 10px 0 15px;
     margin: 0;
     height: 200px;
-    background-color:lightgoldenrodyellow;
+    background-color:lightblue;
 }
 
 header .image {
-    float: right;
+    float: left;
     height: 100px;
+    width: 100%;
 }
 
 header .socials {
@@ -231,6 +246,10 @@ header .socials {
     background-color: #d9593f;
 }
 
+.socials .image {
+    
+}
+
 #footer {
     display: block;
     color: #908b8b;
@@ -250,6 +269,16 @@ header .socials {
     display: block;
     padding: 15px 0;
 }
+
+#main h4 {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 250px;
+}
+    
+}
 #main .wrap {
     padding: 30px;
     background-color: gainsboro;
@@ -267,6 +296,7 @@ header .socials {
         font-style: inherit;
         font-weight: bold;
 }
+
 #main .wrap p {
     font-family: Arial;
     font-size: 20px;
@@ -293,17 +323,5 @@ header .socials {
     font-size: 20px;
     line-height: normal;
 
-}
-#main .wrap .image.right {
-    margin-bottom: 20px;
-    margin-left: 20px;
-}
-#main .wrap .image.left {
-    margin-bottom: 20px;
-    margin-right: 20px;
-}
-#main .wrap .image.full {
-    max-width: 100%;
-    margin-bottom: 50px;
 }
 
