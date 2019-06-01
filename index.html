@@ -1,0 +1,126 @@
+﻿<!doctype html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+
+    <title>E3Q Hotel</title>
+    <meta content="Eco and Energy Efficient Queen" name="description" />
+    <meta content="početna, smještaj, sadržaj" name="keywords" />
+    <meta content="Daria Batinović" name="author" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>   
+<body>
+    <header>
+        <div class="container">
+            <div class="socials">
+                <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+                <a href="https://www.youtube.com" class="fa fa-youtube"></a>
+                <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+            </div>
+        </div>
+        <a href="index.html">
+            <div class="image">
+                <img src="./images/text_3.png" alt="e3q" />
+            </div>
+        </a>
+
+    </header>
+
+        <div class="navbar ">
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="smjestaj.html">Smještaj</a></li>
+                <li>
+                    <a href="restorani.html">Sadržaji</a>
+                    <ul>
+                        <li><a href="restorani.html">Restorani i barovi</a></li>
+                        <li><a href="wellness.html">Wellness centar</a></li>
+                        <li>
+                            <a href="sportske_aktivnosti.html">Sportske aktivnosti</a>
+                            <ul>
+                                <li><a href="bicikl.html">Eko bicikl</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="kongresni_centar.html">Kongresni centar</a></li>
+                <li><a href="zanimljivosti.html">Zanimljivosti o hotelu</a></li>
+            </ul>
+        </div>
+
+    
+
+
+
+    <section id="main">
+        <h4>Dobrodošli na stranicu E3Q hotela.</h4>
+    </section>
+
+    <div id="slider">
+        <div id="sliderbox">
+            <img src="./images/image_1.png" alt="slika1">
+            <img src="./images/soba3.png" alt="slika2">
+            <img src="./images/wellness1.png" alt="slika3">
+            <img src="./images/image_4.png" alt="slika4">
+        </div>
+    </div>
+
+    <button class="open-button" onclick="openForm()">Rezerviraj smještaj</button>
+
+
+    <div class="form-popup" id="myForm">
+        <form action="/rezervirano.php" class="form-container" method="POST">
+            <h3>E3Q Hotel</h3>
+            <div class="form-container">
+
+                <input type="text" placeholder="Unesite ime i prezime" name="imeprezime" required>
+
+                <input type="text" placeholder="Unesite e-mail" name="email" required>
+
+
+                <input type="date" name="dolazak" value="2019-01-07" required>
+
+
+                <input type="date" name="odlazak" value="2019-01-07" required>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Zapamti me
+                </label>
+                <button type="submit" onclick="location.href = 'rezervirano.html';" class="btn">Rezerviraj</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Odustani</button>
+            </div>
+        </form>
+    </div>
+
+
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="socials">
+                <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+                <a href="https://www.youtube.com" class="fa fa-youtube"></a>
+                <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+            </div>
+            <strong>E3Q</strong> &copy; <a>2019</a> | <a href="#">Privacy Policy</a>
+            <p>Website designed by Daria</p>
+        </div>
+    </footer>
+
+</body>
+</html>
